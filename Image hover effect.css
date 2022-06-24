@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(10deg,red,orange,orange,yellow,white);
+}
+
+.container{
+    width: 650px;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container img{
+    width: 49%;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: all .4s;
+}
+
+.container img:hover{
+    transform: rotate(15deg) scale(1.1);
+    border-radius: 40px;
+    opacity: 1;
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.192);
+}
